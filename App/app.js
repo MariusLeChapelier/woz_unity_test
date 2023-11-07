@@ -22,6 +22,13 @@ app.post('/idle', function (req, res) {
     res.send('Idle <form action="/dance" method="post"><input type="submit" value="Dance"></form>');
 });
 
+app.post('/test', function (req, res) {
+    // cpt = cpt + 1;
+    // console.log(cpt);
+    console.log(req);
+    res.send('test');
+});
+
 var server = app.listen(5000, function () {
     console.log('Node server is running..');
 });
